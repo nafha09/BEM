@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wave transactions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .phone {
+      width: 350px;
+      background: rgb(161, 222, 239); 
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 32px;
+      color: #003366;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+      height: 48px;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0055aa;
+    }
+
+    .status {
+      margin-top: 20px;
+      height: 80px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: rgb(65, 186, 231);
+    }
+
+    .green { background: #28a745; color: black;}
+    .yellow { background: #f3880f; color: black; }
+    .red { background: #dc3545;color: black; }
+  </style>
+</head>
+
+<body>
+
+<div class="phone">
+  <h2>Wave transactions</h2>
+
+  <input type="number" id="amount" placeholder="Enter Amount">
+
+  <select id="risk">
+    <option value="low">Normal Transfer</option>
+    <option value="medium">New Recipient</option>
+    <option value="high">Foreign Account</option>
+  </select>
+
+  <button onclick="evaluateTransaction()">Send Transaction</button>
+
+  <div id="result" class="status"></div>
+</div>
+
+<script>
+  function evaluateTransaction() {
+    const amount = document.getElementById("amount").value;
+    const risk = document.getElementById("risk").value;
+    const result = document.getElementById("result");
+
+    result.className = "status";
+
+    if (risk === "high" || amount > 1000) {
+      result.classList.add("red");
+      result.innerText = "Multifactor Authentication Required";
+    } 
+    else if (risk === "medium" || amount > 99) {
+      result.classList.add("yellow");
+      result.innerText = "Transaction Flagged - Enter Password";
+    } 
+    else {
+      result.classList.add("green");
+      result.innerText = "Transaction Approved";
+    }
+  }
+</script>
+
+</body>
+</html>
