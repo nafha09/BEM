@@ -1,6 +1,6 @@
 /* EDIT THE PROFILE AND CONTENT HERE. No build tools or internet connection needed. */
 const profile = {
- name:"Maya Carter", initials:"MY", subject:"Bachelor of Science in Environmental and Sustainability Studies", year:"2040",
+ name:"Jane Doe", initials:"JD", subject:"Bachelor of Science in Environmental and Sustainability Studies", year:"2040",
  quote:"I'm interested in how people and communities can create more sustainable ways of living.",
  interests:["Sustainable food systems","Community-led innovation","Environmental design"],
  stats:[["12","Projects"],["8","Collabs"],["3","Eco advocacy score"],["1","Volunteer campaigns"],["4","Skills developed"]],
