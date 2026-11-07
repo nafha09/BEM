@@ -1140,7 +1140,7 @@ content.addEventListener("click", event => {
     box.hidden = false;
 
     box.textContent =
-      "In the full system, Jordan would choose exactly which sections to share and with whom.";
+      "Select to continue with student moderation.";
 
   }
 
