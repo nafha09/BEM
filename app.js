@@ -99,7 +99,7 @@ const projectDetails = {
     title: "A more sustainable food future",
 
     description:
-      "Jordan researched ways to reduce food waste through a community-led university initiative.",
+      "Jane researched ways to reduce food waste through a community-led university initiative.",
 
     contribution:
       "Coordinated interviews, mapped food-sharing opportunities and presented recommendations.",
@@ -108,7 +108,7 @@ const projectDetails = {
       "Good solutions need to be shaped with the people who will use them.",
 
     teacher:
-      "Jordan demonstrated thoughtful engagement with community needs, listened to different perspectives and adapted the original proposal in response to feedback."
+      "Jane demonstrated thoughtful engagement with community needs, listened to different perspectives and adapted the original proposal in response to feedback."
   },
 
   garden: {
@@ -116,7 +116,7 @@ const projectDetails = {
     title: "Community garden",
 
     description:
-      "Jordan worked with local residents to plan shared growing spaces and accessible activities.",
+      "Jane worked with local residents to plan shared growing spaces and accessible activities.",
 
     contribution:
       "Helped coordinate ideas and adapt plans around residents' needs.",
@@ -125,7 +125,7 @@ const projectDetails = {
       "I learned that local knowledge can change what a successful project looks like.",
 
     teacher:
-      "Jordan showed an appreciation for local knowledge and demonstrated an ability to consider how people, plants and shared spaces depend on one another."
+      "Ms.Doe showed an appreciation for local knowledge and demonstrated an ability to consider how people, plants and shared spaces depend on one another."
   }
 
 };
@@ -486,7 +486,7 @@ const pages = {
       <div class="eyebrow">Project details</div>
 
       <p class="muted" style="margin-top:8px">
-        Choose a project above to see Jordan's contribution,
+        Choose a project above to see Jane's contribution,
         evidence and reflection.
       </p>
 
@@ -776,7 +776,7 @@ const pages = {
 
     <div class="card section">
 
-      <div class="eyebrow">Jordan · Self-reflection</div>
+      <div class="eyebrow">Student · Self-reflection</div>
 
       <p style="margin-top:9px">
         “I learned to listen before proposing solutions.
@@ -791,7 +791,7 @@ const pages = {
       <div class="eyebrow">Peer perspective</div>
 
       <p style="margin-top:9px">
-        “Jordan helped the group bring different opinions together
+        “Jane helped the group bring different opinions together
         and made sure everyone's ideas were heard.”
       </p>
 
@@ -896,7 +896,7 @@ const pages = {
     <h1>Privacy and sharing</h1>
 
     <p class="muted">
-      Jordan decides what is included and who can see it.
+      Jane decides what is included and who can see it.
     </p>
 
 
