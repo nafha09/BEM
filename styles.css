@@ -58,3 +58,188 @@ footer{padding:12px 18px;border-top:1px solid var(--line);display:flex;justify-c
 .milestone-content{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:1;min-height:105px}
 .milestone-copy{min-width:0}
 @media(max-width:560px){.sidebar-planet{display:none}.milestone-art{width:72px;height:72px;flex-basis:72px}}
+
+
+/* =========================================
+   UNI WRAPPED
+   ========================================= */
+
+.wrapped-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wrapped-card {
+  min-height: 145px;
+}
+
+.wrapped-card .stat {
+  margin-top: 12px;
+}
+
+
+/* =========================================
+   CLICKABLE OVERVIEW CARDS
+   ========================================= */
+
+.feature-link {
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-link:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+
+/* =========================================
+   RECORDING DISPLAY
+   ========================================= */
+
+.record-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.record-indicator {
+  margin-left: auto;
+  color: #ff858d;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.record-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6878;
+}
+
+.waveform {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 55px;
+  margin-top: 10px;
+}
+
+.waveform i {
+  width: 4px;
+  border-radius: 5px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+
+/* =========================================
+   COLLABORATION NETWORK
+   ========================================= */
+
+.network {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  height: 230px;
+  margin: 20px auto;
+}
+
+.network-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.network-lines line {
+  stroke: #8985ee;
+  opacity: 0.75;
+  stroke-linecap: round;
+}
+
+.person-node {
+  position: absolute;
+  z-index: 2;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #343d83;
+  color: white;
+  border: 2px solid #a99aff;
+  cursor: pointer;
+  font-size: 11px;
+  transition: box-shadow 0.2s ease;
+}
+
+.person-node:hover {
+  box-shadow: 0 0 18px #a99aff;
+}
+
+.main-node {
+  width: 64px;
+  height: 64px;
+  left: calc(50% - 32px);
+  top: 84px;
+  background: #7779e8;
+}
+
+.node-one {
+  left: 7px;
+  top: 17px;
+}
+
+.node-two {
+  right: 7px;
+  top: 17px;
+}
+
+.node-three {
+  left: 7px;
+  bottom: 0;
+}
+
+.node-four {
+  right: 7px;
+  bottom: 0;
+}
+
+
+/* =========================================
+   PROJECT PERSPECTIVE SWITCH
+   ========================================= */
+
+.perspective-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.perspective-switch .action.active {
+  border-color: #a99aff;
+  background: rgba(137, 133, 238, 0.18);
+}
+
+
+/* =========================================
+   MOBILE LAYOUT
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .wrapped-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .network {
+    max-width: 300px;
+  }
+
+}
