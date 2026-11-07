@@ -226,7 +226,7 @@ const pages = {
       </button>
 
 
-      <!-- Assessing and Monitoring -->
+      <!-- Nova Band -->
 
       <button
         type="button"
@@ -234,7 +234,7 @@ const pages = {
         data-open-page="monitoring"
       >
 
-        <h2>Assessing &amp; Monitoring</h2>
+        <h2>Nova &amp; Band</h2>
 
         <p class="mini">
           Your wearable sustainability companion
@@ -588,12 +588,12 @@ const pages = {
 
 
   /* ---------------------------------------------------
-     4.6 ASSESSING AND MONITORING
+     4.6 Nova Band
      Visual collaboration network and class recording.
      --------------------------------------------------- */
 
   monitoring: () => `
-    <div class="eyebrow">05 / Assessing & Monitoring</div>
+    <div class="eyebrow">05 /Nova Band</div>
 
     <h1>Collaboration Network</h1>
 
