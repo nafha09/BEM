@@ -234,7 +234,7 @@ const pages = {
         data-open-page="monitoring"
       >
 
-        <h2>Nova &amp; Band</h2>
+        <h2>Nova Band</h2>
 
         <p class="mini">
           Your wearable sustainability companion
