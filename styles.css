@@ -243,3 +243,70 @@ footer{padding:12px 18px;border-top:1px solid var(--line);display:flex;justify-c
   }
 
 }
+
+
+
+
+/* =========================================
+   ORBIT MOBILE TOUCH FIX
+   ========================================= */
+
+@media (max-width: 680px) {
+
+  /* Make the navigation a proper mobile menu */
+  .sidebar {
+    display: block;
+    overflow: visible;
+    padding: 12px;
+  }
+
+  /* Keep the navigation wrapper inside the sidebar */
+  .sidebar > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    width: 100%;
+  }
+
+  /* Make every navigation button easy to tap */
+  .sidebar .nav {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: normal;
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Hide the decorative Orbit sidebar card on phones */
+  .sidebar > .card {
+    display: none;
+  }
+
+  /* Improve touch response for all interactive buttons */
+  button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent cards from becoming too small */
+  .main {
+    min-width: 0;
+    padding: 14px;
+  }
+
+  .feature-link {
+    min-height: 150px;
+  }
+
+  .person-node {
+    min-width: 54px;
+    min-height: 54px;
+    touch-action: manipulation;
+  }
+}
