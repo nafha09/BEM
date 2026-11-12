@@ -14,7 +14,7 @@
 const profile = {
   name: "Jane Doe",
   initials: "JD",
-  subject: "Bachelor of Science in Environmental and Sustainability Studies",
+  subject: "BSc in evnvironmental and Sustainability Studies",
   year: "2060",
 
   quote: "I'm interested in how people and communities can create more sustainable ways of living.",
